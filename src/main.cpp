@@ -8,12 +8,12 @@
 DHT dht(DHTPIN, DHTTYPE);
 
 // Cấu hình WiFi
-const char* ssid = "LLL";       // Thay bằng tên WiFi của bạn
-const char* password = "09090909"; // Thay bằng mật khẩu WiFi của bạn
+const char* ssid = "LLL";       
+const char* password = "09090909"; 
 
 // Cấu hình Thinkspeak
 const char* server = "http://api.thingspeak.com/update";
-const char* apiKey = "HWM38MBKE651PBZN"; // Thay bằng API Key của bạn trên Thinkspeak
+const char* apiKey = "HWM38MBKE651PBZN"; 
 
 void setup() {
     Serial.begin(115200);
@@ -58,5 +58,5 @@ void loop() {
         http.end();
     }
 
-    delay(1000); // Gửi dữ liệu mỗi 15 giây
+    delay(1000); 
 }
